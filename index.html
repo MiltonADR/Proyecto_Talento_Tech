@@ -3,34 +3,79 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/Proyecto_Talento_Tech/css/styles.css" />
+    <link rel="stylesheet" href="css/styles.css" />
     <title>Tienda de Carteras</title>
+    <link rel="shortcut favicon" href="favicon.ico" type="image/x-icon" />
+    <script
+      src="https://kit.fontawesome.com/ee85bc18fb.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body class="grid-container">
     <header class="header">
+      <img class="logo" src="/assets/img/logo2024.jfif" alt="" />
       <h1>Cuarto de Luna</h1>
     </header>
     <nav class="nav">
       <ul>
-        <li><a href="/Proyecto_Talento_Tech/index.html">Inicio</a></li>
+        <li><a href="/index.html">Inicio</a></li>
         <li>
-          <a href="/Proyecto_Talento_Tech/pages/productos.html">Productos</a>
+          <a href="/pages/productos.html">Productos</a>
         </li>
         <li>
-          <a href="/Proyecto_Talento_Tech/pages/contacto.html">Contacto</a>
+          <a href="/pages/contacto.html">Contacto</a>
         </li>
         <li>
-          <a href="/Proyecto_Talento_Tech/pages/nosotros.html">Nosotros</a>
+          <a href="/pages/nosotros.html">Nosotros</a>
         </li>
-        <li><a href="/Proyecto_Talento_Tech/pages/carrito.html">Carrito</a></li>
+        <li>
+          <a href="/pages/carrito.html"
+            ><i class="fa-solid fa-cart-shopping"></i
+          ></a>
+        </li>
       </ul>
     </nav>
 
     <aside class="aside"></aside>
 
     <main class="main">
-      <section class="productos">
-        <h2>Inicio</h2>
+      <section class="productos-index">
+        <h3>Nuestros Productos Destacados</h3>
+        <div class="card-index">
+          <div class="card">
+            <img
+              class="card-image"
+              src="/assets/img//carteraSun19990.jpg"
+              alt="Cartera de Cuero"
+            />
+            <div class="card-content">
+              <h2 class="card-title">Cartera Sun</h2>
+              <p class="card-description">$19.990</p>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              class="card-image"
+              src="/assets/img//carteraBarcelona78990.jpg"
+              alt="Cartera Compacta"
+            />
+            <div class="card-content">
+              <h2 class="card-title">Cartera Barcelona</h2>
+              <p class="card-description">$78.990</p>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              class="card-image"
+              src="/assets/img//bandoleraHold64990.jpg"
+              alt="Bandolera Hold"
+            />
+            <div class="card-content">
+              <h2 class="card-title">Bandolera Hold</h2>
+              <p class="card-description">$69.990</p>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
 

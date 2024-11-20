@@ -24,19 +24,28 @@ body {
 
   .header {
     grid-area: header;
-    background-color: #D9C2A7;
+    background-color: #d9c2a7;
+    padding: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
   .header > h1 {
-    color: #594A3C;
+    color: #594a3c;
+    padding-left: 20px;
+    display: none;
+  }
+
+  .logo {
+    height: 180px;
+    padding: 0px;
+    border-radius: 5px;
   }
 
   .nav {
     grid-area: nav;
-    background-color: #D9C2A7;
+    background-color: #d9c2a7;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -52,12 +61,12 @@ body {
   .nav > ul > li > a {
     text-decoration: none;
     padding: 5px;
-    color: #594A3C;
+    color: #594a3c;
   }
 
   .aside {
     grid-area: aside;
-    background-image: url(/Proyecto_Talento_Tech/assets/img/bannerPrincipal.jpg);
+    background-image: url("/assets/img/bannerPrincipal.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -66,10 +75,18 @@ body {
     grid-area: main;
     background-color: #f5f5f5;
     display: flex;
-  
   }
 
-  .productos{
+  .nosotros {
+    padding: 10px;
+    color: #594a3c;
+  }
+
+  .nosotros > ul {
+    list-style: none;
+  }
+
+  .productos {
     width: 100%;
     padding: 10px;
     display: flex;
@@ -77,33 +94,71 @@ body {
     justify-content: center;
   }
 
-  .card{
-    width: 16rem;
+  .productos-index {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    color: #594a3c;
+  }
 
+  .card-index {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .card {
+    width: 16rem;
     margin: 5px;
-    border: 1px solid #D9C2A7;
+    border: 1px solid rgb(217, 193, 166);
     border-radius: 5px;
   }
 
-  .card-image{
+  .card-image {
     width: 100%;
     padding: 5px;
   }
 
-  .card-content{
+  .card-content {
     text-align: center;
+    color: #594a3c;
+    padding: 5px;
   }
 
+  .contacto {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    color: #594a3c;
+  }
 
+  .formulario {
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    color: #594a3c;
+  }
 
-
+  .boton {
+    background-color: #d9c2a7;
+    color: #594a3c;
+    padding: 10px 20px;
+    border: none;
+  }
 
   .footer {
     grid-area: footer;
-    background-color: #D9C2A7;
+    background-color: #d9c2a7;
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #594a3c;
   }
 
   @media (width >= 768px) {
@@ -113,20 +168,45 @@ body {
       "aside main" auto
       "footer footer" 100px/
       200px auto;
+
+    .logo {
+      height: 100px;
+    }
   }
 
   @media (width >= 992px) {
     grid-template:
       "header header header" 100px
-      "nav main aside" 
+      "nav main aside"
       "footer footer footer" 100px/
       200px auto 200px;
 
-    .nav > ul {
-      flex-direction: column;
-      justify-content: start;
+    .header > h1 {
+      display: block;
+      width: 50%;
+      text-align: center;
     }
 
+    .logo {
+      width: 100px;
+      text-align: left;
+    }
 
+    .nav > ul {
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+
+    .nav > ul > li {
+      margin: 10px;
+    }
+
+    .nav > ul > li > a:hover {
+      background-color: #594a3c;
+      color: #f5f5f5;
+      padding: 10px;
+      margin: 10px;
+      border-radius: 8px;
+    }
   }
 }
